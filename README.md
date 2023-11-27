@@ -16,20 +16,16 @@ And since image dimensions vary greatly, resizing all images to a fixed size, e.
 
 Hence, dynamically resize and pad the images to maintain their original aspect ratios.
 
-<img width="1205" alt="Screenshot 2023-11-27 at 9 11 28 AM" src="https://github.com/annachrome/Classifying_Flowers/assets/84694222/708a3bf1-ad97-4480-b785-9fb9b9a021ad">
-
-
-
 # Model
 ResNet-50 pre-trained on ImageNet. 
 
 According to Wightman (2021), _ResNet Strikes Back_, while ResNet is a pretty basic model far from SOTA, with the right combination of data augmentations, fine-tuning and hyperparameters, the model can yield incredibly high accuracy on its own. This is an incredibly valuable finding for engineers with limited compute resources.
 
 # Evaluation
+<img width="442" alt="Screenshot 2023-11-27 at 11 04 03 AM" src="https://github.com/annachrome/Classifying_Flowers/assets/84694222/b7aed43f-f27a-4481-bacb-99a3377f50dd">
 In version 4.0, accuracy was 93% so I added CutMix augmentation as Wightman suggested (and altered the criterion accordingly). 
 
-<img width="442" alt="Screenshot 2023-11-27 at 11 04 03 AM" src="https://github.com/annachrome/Classifying_Flowers/assets/84694222/b7aed43f-f27a-4481-bacb-99a3377f50dd">
-
+<img width="1205" alt="Screenshot 2023-11-27 at 9 11 28 AM" src="https://github.com/annachrome/Classifying_Flowers/assets/84694222/708a3bf1-ad97-4480-b785-9fb9b9a021ad">
 
 In version 5.0, accuracy was 97%. Misclassified images were often wrongly labeled according to color. Hence, I added augementations grayscaling and color jitter, which upped accuracy to the current 98.86%.
 
