@@ -1,7 +1,7 @@
 # Summary
 
 Fine-tuned ResNet-50 on augmented Flowers-102 Dataset.
-Validation Accuracy: 98.86%
+Validation Accuracy: 98.66%
 
 <img width="641" alt="Screenshot 2023-11-27 at 10 50 53 AM" src="https://github.com/annachrome/Classifying_Flowers/assets/84694222/85588948-2284-4bef-ba04-224d5db1dbbc">
 
